@@ -12,16 +12,21 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right top, #f472b6, #8b5cf6);
+      background: linear-gradient(to top right, #fef2f2, #fca5a5, #ec4899, #8b5cf6);
       color: #111827;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
     .container {
       max-width: 800px;
-      margin: 40px auto;
+      width: 100%;
       background: white;
       padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     }
     header {
       text-align: center;
@@ -31,11 +36,12 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 0 5px #d1d5db;
+      box-shadow: 0 0 0 4px #f472b6;
     }
     h1 {
       margin: 16px 0 8px;
-      font-size: 2rem;
+      font-size: 2.25rem;
+      color: #8b5cf6;
     }
     p.tagline {
       color: #6b7280;
@@ -47,8 +53,9 @@
     h2 {
       font-size: 1.5rem;
       margin-bottom: 16px;
-      border-bottom: 2px solid #e5e7eb;
+      border-bottom: 2px solid #f472b6;
       padding-bottom: 8px;
+      color: #8b5cf6;
     }
     ul {
       list-style: none;
@@ -58,36 +65,40 @@
       margin-bottom: 12px;
     }
     .contact a {
-      color: #3b82f6;
+      color: #ec4899;
       text-decoration: none;
+      font-weight: 500;
     }
     .contact a:hover {
       text-decoration: underline;
     }
     .highlight {
       font-weight: 600;
+      color: #111827;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="img/profile.png" alt="Foto Profil" />
+      <img src="profile.jpg" alt="Foto Profil" />
       <h1>Nama Anda</h1>
-      <p class="tagline">Deskripsi singkat tentang diri Anda.Frontend Developer yang antusias membangun antarmuka web yang elegan dan responsif serta membangun backend web agar sistem berjalan lebih baik. </p>
+      <p class="tagline">Deskripsi singkat tentang diri Anda. Contoh: Frontend Developer yang antusias membangun antarmuka web yang elegan dan responsif.</p>
     </header>
 
     <section>
       <h2>Kontak</h2>
       <ul class="contact">
-        <li>Email: <a href="mailto:kevinteachings@gmail.com">kevinteachings@gmail.com</a></li>
+        <li>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></li>
+        <li>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></li>
       </ul>
     </section>
 
     <section>
       <h2>Pendidikan</h2>
       <ul>
-        <li><span class="highlight">Universitas IBBI</span> – Teknik Informatika (Tahun Masuk [2017] - Lulus [2021])</li>
+        <li><span class="highlight">Nama Universitas</span> – Jurusan (Tahun Masuk - Lulus)</li>
       </ul>
     </section>
 
@@ -95,9 +106,9 @@
       <h2>Pengalaman Kerja</h2>
       <ul>
         <li>
-          <span class="highlight">SMK NEGERI 1 KAYAN HILIR</span> – GURU HONORER (2023)
+          <span class="highlight">Nama Perusahaan</span> – Posisi (Tahun)
           <br />
-          Tugas mengajar dengan waktu yang sudah di berikan, oleh satuan pendidikan di SMK NEGERI 1 KAYAN HILIR
+          Deskripsi tugas dan pencapaian Anda di sini.
         </li>
       </ul>
     </section>
@@ -106,14 +117,15 @@
       <h2>Keahlian</h2>
       <ul>
         <li>HTML, CSS, JavaScript</li>
-        <li>PHP, Vue, Tailwind CSS</li>
+        <li>React, Vue, Tailwind CSS</li>
+        <li>Python, Node.js, Git</li>
       </ul>
     </section>
 
     <section>
       <h2>Proyek</h2>
       <ul>
-        <li><span class="highlight">Github</span> – link <a href="https://github.com/kevin1ss">Github</li>
+        <li><span class="highlight">Nama Proyek</span> – Deskripsi proyek singkat atau tautan GitHub</li>
       </ul>
     </section>
   </div>
